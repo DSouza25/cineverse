@@ -1,0 +1,169 @@
+.contentDetail{
+    height: 100%;
+    width: 100%;
+    background-image: var(--background-image-url);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    color: whitesmoke;
+    display: flex;
+}
+.part1{
+    width: 50%;
+    height: 59%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.titulo{
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 0px 5px 4px black;  
+}
+.nota{
+    color: yellow;
+}
+.lancamento{
+    font-size: 1.5rem;
+}
+.part2{
+    width: 50%;
+    height: 59%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.sinopse{
+    font-size: 1.1rem;
+    max-width: 85%;
+    text-shadow: 0px 1px 2px black;
+}
+.btnTrailer{
+    width: 300px;
+    height: 35px;
+    cursor: pointer;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: rgb(195, 2, 2);
+    color: whitesmoke;
+    font-size: 1rem;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.btnTrailer:hover{
+    background-color: rgb(224, 25, 25);
+}
+.btnAdd{
+    width: 300px;
+    height: 35px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: whitesmoke;
+    font-size: 1rem;
+    background-color: green;
+    transition: .3s;
+}
+.btnAdd:hover{
+    background-color: rgb(17, 146, 17);
+}
+.gradiente{
+    position: absolute;
+    height: calc(100vh - 50px);
+    width: 100%;
+    background-image: linear-gradient(to top, black, transparent);
+}
+@media (max-width: 768px) {
+    .titulo{
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 0px 5px 4px black;  
+    }
+    .contentDetail{
+        flex-direction: column;
+        align-items: center;
+    }
+    .part1{
+        width: 100%;
+        height: 25%;
+    }
+    .part2{
+        width: 100%;
+        height: 25%;
+    }
+    .nota{
+        color: yellow;
+        font-size: .8rem;
+    }
+    .lancamento{
+        font-size: 1rem;
+    }
+    .sinopse{
+        max-width: 85%;
+        font-size: .9rem;
+    }
+    .btnTrailer{
+        margin-top: 0px;
+        height: 40px;
+        width: 200px;
+    }
+    .btnAdd{
+        margin-top: 5px;
+        height: 40px;
+        width: 200px;
+    }
+}
+@media (max-width: 426px) {
+    .titulo{
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 0px 5px 4px black;  
+    }
+    .contentDetail{
+        flex-direction: column;
+        align-items: center;
+    }
+    .part1{
+        width: 100%;
+        height: 25%;
+    }
+    .part2{
+        width: 100%;
+        height: 25%;
+    }
+    .nota{
+        color: yellow;
+        font-size: .8rem;
+    }
+    .lancamento{
+        font-size: 1rem;
+    }
+    .sinopse{
+        max-width: 75%;
+        font-size: .8rem;
+    }
+    .btnTrailer{
+        margin-top: 20px;
+        font-size: .9rem;
+        height: 40px;
+        width: 200px;
+    }
+    .btnAdd{
+        margin-top: 8px;
+        height: 40px;
+        width: 200px;
+        font-size: .9rem;
+    }
+}
+@media (max-width: 376px) {
+    .titulo{
+        font-size: 1.8rem;
+    }
+}
