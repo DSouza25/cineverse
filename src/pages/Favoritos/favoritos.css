@@ -4,6 +4,7 @@ body{
 .favContent{
     display: flex;
     flex-wrap: wrap;
+    height: calc(100vh - 50px);
     width: 100vw;
     justify-content: center;
     background-image: linear-gradient(rgb(98, 1, 1), rgb(255, 0, 0), rgb(42, 0, 0));
